@@ -14,15 +14,15 @@ A real-time pipeline that captures live English speech, transcribes it, translat
 ```
 EN: Can we move the meeting to 5 PM tomorrow?
 HI: क्या हम मीटिंग को कल शाम 5 बजे कर सकते हैं?
-Playing...  ⏱ 1847ms
+Playing...  ⏱ 2347ms
 
 EN: Push the changes to GitHub and deploy on AWS.
 HI: GitHub पर बदलाव करें और AWS पर deploy करें।
-Playing...  ⏱ 1723ms
+Playing...  ⏱ 2123ms
 
 EN: Sir, could you please review this report by EOB?
 HI: सर, क्या आप इस रिपोर्ट को दिन के अंत तक देख सकते हैं?
-Playing...  ⏱ 1915ms
+Playing...  ⏱ 2115ms
 ```
 
 ---
@@ -140,10 +140,10 @@ Measured on MacBook Air, India, hitting overseas APIs:
 ```
 VAD + buffering:   ~0ms    (real-time, no network)
 Whisper ASR:       ~500ms  (local inference, beam_size=1)
-Groq translation:  ~400ms  (vs ~1500ms with OpenAI from India)
-edge-tts:          ~900ms  (Microsoft neural TTS, network)
+Groq translation:  ~440ms  (vs ~1500ms with OpenAI from India)
+edge-tts:          ~1200ms  (Microsoft neural TTS, network)
 ─────────────────────────────────────────────────────
-Total:             ~1.8s   consistent, no spikes
+Total:             ~2.2s   consistent, no spikes
 ```
 
 ### Optimization History
